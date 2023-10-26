@@ -1,0 +1,284 @@
+.about-cards{
+    width: 100%;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+.about-card{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+#about{
+    display: flex;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+}
+#mission{
+    display: flex;
+    gap:40px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.about-left{
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    text-align: center;
+}
+.about-left h1{
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+}
+.about-left p{
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.about-left button{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    background-color: transparent;
+    color: inherit;
+    font-weight: 700;
+    border: 1px solid white;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.about-left button::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(227, 203, 45);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+.about-left button:hover::before{
+    transform: translateX(0);
+}
+.about-right{
+    width: 100%;
+    max-width: 500px;
+    flex-shrink: 0;
+    position: relative;
+}
+.about-right .lazy-load-image-background{
+    display: inline-block;
+    width: 100%;
+    aspect-ratio: 1/1.2;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.lazy-load-image-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-right span:first-of-type{
+    height: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgb(227, 203, 45);
+    position: absolute;
+    right: -50%;
+    top: 50%;
+    transform: translate(-40%,-50%);
+}
+#mission .about-right span:first-of-type{
+    left: -50%;
+    transform: translate(40%,-50%);
+}
+#values > h1,
+#mission > h1{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.values-content{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+}
+.values-content .center{
+    width: 350px;
+    height: 500px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.values-content .center .lazy-load-image-background{
+    width: 100%;
+    height: 100%;
+}
+.value-cards{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.value-card{
+    padding: 30px 20px;
+}
+.value-card h1{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 11px 0 0;
+    font-size: 22px;
+}
+.value-card p{
+    margin: 20px 0 0;
+    font-size: 15px;
+}
+#impact{
+    padding: 30px;
+    width: 100%;
+    background-image: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/bf48ed0748c75a00aaa512bb/PA7BIF1x.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.impact-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 40px;
+}
+.impact-wrapper div{
+    width: 50%;
+}
+#impact h1{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#impact p{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#impact .lazy-load-image-background{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+@media screen and (max-width: 1030px){
+    .about-right{
+        max-width: 400px;
+    }
+    .values-content{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .values-content .center{
+        order: 2;
+    }
+    .value-cards{
+        width: 50%;
+        justify-content: space-around;
+    }
+    .value-cards.right{
+        order: 3;
+        width: 100%;
+        max-width: 800px;
+    }
+    #impact .lazy-load-image-background{
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #about,#mission{
+        flex-direction: column-reverse;
+    }
+    .about-left{
+        max-width: 600px;
+    }
+    .about-left h1,
+    #values > h1,
+    #impact h1{
+        font-size: 40px;
+    }
+    .about-left p{
+        font-size: 14px;
+    }
+    .about-left button{
+        width: 120px;
+        font-size: 15px;
+    }
+    .about-right{
+        max-width: 380px;
+    }
+    .about-right span:nth-child(1){
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+    #mission .about-right span:nth-child(1){
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+    #values > h1,
+    #impact h1{
+        margin-bottom: 20px;
+    }
+    .values-content{
+        flex-direction: column;
+        align-items: center; 
+    }
+    .values-content .center{
+        order: unset;
+        width: 100%;
+        max-width: 380px;
+        height: unset;
+        aspect-ratio: 1/1.2;
+        flex-shrink: 1;
+    }
+    .value-card{
+        padding: 20px;
+    }
+    .value-cards,
+    .value-cards.right{
+        width: 100%;
+        max-width: unset;
+    }
+    .value-cards.right{
+        order: unset;
+    }
+    .value-cards h1{
+        font-size: 19px;
+    }
+    .value-cards p,
+    #impact p{
+        font-size: 14px;
+    }
+    .impact-wrapper{
+    flex-direction: column;
+    }
+    .impact-wrapper div{
+        width: 100%;
+        max-width: 600px;
+    }
+}
