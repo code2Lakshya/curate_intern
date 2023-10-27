@@ -14,10 +14,10 @@ const Apply = () => {
                             Ready to embark on this incredible journey? To apply for our internship program, follow these steps:
                         </p>
                         <ul>
-                            <li><span>Step 1.</span>Visit our careers page and search for available internship opportunities.</li>
-                            <li><span>Step 2.</span>Submit your resume and cover letter.</li>
-                            <li><span>Step 3.</span>If your qualifications align with our requirements, you'll be invited for an interview.</li>
-                            <li><span>Step 4.</span>Successful candidates will receive an offer to join our internship program.</li>
+                            <li><span>Step 1:</span>Visit our careers page and search for available internship opportunities.</li>
+                            <li><span>Step 2:</span>Submit your resume and cover letter.</li>
+                            <li><span>Step 3:</span>If your qualifications align with our requirements, you'll be invited for an interview.</li>
+                            <li><span>Step 4:</span>Successful candidates will receive an offer to join our internship program.</li>
                         </ul>
                     </div>
                     <LazyLoadImage src={src} alt='apply' effect='blur' />
