@@ -16,7 +16,7 @@ const Navbar = () => {
 
                 <h1><Link to='/'>Curate</Link></h1>
 
-                <ul className={navList ? 'active' : ''}>
+                <ul className={navList ? 'active' : ''} onClick={()=>setNavList(false)}>
                     <li><HashLink to='#home' smooth>Home</HashLink></li>
 
                     <li>

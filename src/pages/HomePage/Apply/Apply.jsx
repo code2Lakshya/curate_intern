@@ -20,7 +20,7 @@ const Apply = () => {
                             <li><span>Step 4:</span>Successful candidates will receive an offer to join our internship program.</li>
                         </ul>
                     </div>
-                    <LazyLoadImage src={src} alt='apply' effect='blur' />
+                    <LazyLoadImage src={src} alt='apply' effect='blur'/>
                 </div>
             </div>
         </section>
