@@ -17,9 +17,9 @@ const DropDown = ({ heading, values, url }) => {
             </p>
             {
                 dropdown &&
-                <div className='dropdown-list'>
+                <div className='dropdown-list' >
                     {
-                        values.map((item, index) => <p key={index}>
+                        values.map((item, index) => <p key={index} data-testid='dropdown'>
                             <HashLink to={url ? `${url}#${item}` : `#${item}`} smooth>{item}</HashLink>
                         </p>)
                     }
