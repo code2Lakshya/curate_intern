@@ -94,7 +94,7 @@ const AboutSection = () => {
             <section id='impact'>
                 <div className='impact-wrapper'>
                     <div>
-                        <h1>Our impact</h1>
+                        <h1>Our Impact</h1>
                         <p>
                             Over the years, Curate Intern has made a significant impact in the industry.
                             We've been at the forefront of innovation, pioneering new technologies, and finding

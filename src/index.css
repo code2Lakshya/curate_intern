@@ -8,5 +8,5 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  height: 100000000000000vh;
+  overflow-x: hidden;
 }

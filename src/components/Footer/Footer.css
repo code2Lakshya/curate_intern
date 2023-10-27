@@ -1,0 +1,47 @@
+footer{
+    width: 100%;
+    padding: 30px;
+    background-color: #333333;
+    color: white;
+}
+footer .footer-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.footer-wrapper p{
+    font-size: 16px;
+}
+.footer-wrapper span{
+    color: yellow;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.footer-wrapper span:hover{
+    color: red;
+    text-decoration: underline;
+}
+.footer-wrapper ul{
+    display: flex;
+    list-style: none;
+    gap:15px;
+    font-size: 16px;
+}
+.footer-wrapper ul a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.footer-wrapper ul a:hover{
+    color: red;
+}
+@media screen and (max-width: 800px) {
+    .footer-wrapper p,
+    .footer-wrapper ul{
+        font-size: 15px;
+    }
+}

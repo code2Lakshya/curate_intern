@@ -1,0 +1,49 @@
+#join{
+    width: 100%;
+    padding: 30px;
+    background-image: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/bf48ed0748c75a00aaa512bb/PA7BIF1x.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.join-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.join-wrapper div{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.join-wrapper h1{
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+}
+.join-wrapper div p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.join-wrapper #join-description{
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.join-wrapper #join-description span{
+    font-weight: 700;
+    color: black;
+}
+@media screen and (max-width: 800px) {
+    .join-wrapper div{
+        margin-bottom: 30px;
+    }
+    .join-wrapper h1{
+        font-size: 40px;
+    }
+    .join-wrapper div p{
+        font-size: 15px;
+    }
+    .join-wrapper #join-description{
+        font-size: 15px;
+    }
+}

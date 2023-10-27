@@ -19,4 +19,27 @@ export const whyus = [
         heading: 'Real-World Experience',
         desc: "Our interns are not just observers; they are integral members of our teams, contributing to meaningful projects and gaining practical experience."
     }
+];
+
+export const internContent= [
+    {
+        heading: 'Passion',
+        desc: "We want interns who are excited to learn, grow, and contribute to our company's success."
+    },
+    {
+        heading: 'Curiosity',
+        desc: "A willingness to ask questions and seek solutions is highly valued."
+    },
+    {
+        heading: 'Team Players',
+        desc: "Collaboration is at the heart of what we do. We appreciate interns who thrive in a team environment."
+    },
+    {
+        heading: 'Adaptability',
+        desc: "The business world is constantly changing. We seek interns who can adapt to new situations and challenges."
+    },
+    {
+        heading: 'Problem-Solvers',
+        desc: "We value individuals who can think critically and find creative solutions"
+    }
 ]
