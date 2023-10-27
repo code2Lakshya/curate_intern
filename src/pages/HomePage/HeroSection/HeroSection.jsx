@@ -1,5 +1,7 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './HeroSection.css';
-
+import imgsrc from '../../../assets/heroImage.jpg'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const HeroSection = () => {
 
@@ -11,7 +13,7 @@ const HeroSection = () => {
                     <p>Unlocking Your Potential, One Internship at a Time</p>
                 </div>
                 <div id='hero-right'>
-
+                <LazyLoadImage src={imgsrc} alt='hero' effect='blur' />
                 </div>
             </div>
         </section>
