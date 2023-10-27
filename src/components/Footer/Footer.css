@@ -10,7 +10,6 @@ footer .footer-wrapper{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap:30px;
     flex-wrap: wrap;
 }
 .footer-wrapper p{
@@ -28,8 +27,10 @@ footer .footer-wrapper{
 .footer-wrapper ul{
     display: flex;
     list-style: none;
-    gap:15px;
     font-size: 16px;
+}
+.footer-wrapper ul > * + *{
+    margin-left: 15px
 }
 .footer-wrapper ul a{
     color: inherit;
@@ -43,5 +44,13 @@ footer .footer-wrapper{
     .footer-wrapper p,
     .footer-wrapper ul{
         font-size: 15px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .footer-wrapper > * + *{
+        margin-top: 14px;
     }
 }

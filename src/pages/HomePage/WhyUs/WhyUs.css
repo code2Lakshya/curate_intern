@@ -26,10 +26,13 @@
 .whyus-cards{
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
     color: black;
     user-select: none;
     justify-content: center;
+}
+.whyus-cards > * {
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 .whyus-card{
     width: 100%;
@@ -96,7 +99,13 @@
         width: 100%;
         max-width: 500px;
         min-height: 300px;
-        gap: 30px;
+    }
+    .whyus-cards > * {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .whyus-cards > * + *{
+        margin-top: 30px;
     }
     .whyus-card h3{
         font-size: 20px;

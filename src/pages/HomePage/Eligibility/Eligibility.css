@@ -14,11 +14,13 @@
 }
 .eligibility-top{
     display: flex;
-    gap:100px;
     justify-content: center;
     position: relative;
     z-index: 1;
     align-items: center;
+}
+.eligibility-top > * + *{
+    margin-left: 100px;
 }
 .eligibility-image{
     flex-shrink: 0;
@@ -61,8 +63,10 @@
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    gap:10px;
     position: relative;
+}
+.header-container .content > * + *{
+    margin-top: 10px;
 }
 .header-container .content span{
     font-size: 16px;
@@ -82,13 +86,17 @@
         height: 115%;
         transform: translate(-7%,-7%);
     }
-    .eligibility-top{
-        gap:50px;
+    .eligibility-top > * + *{
+        margin-left: 50px;
     }
 }
 @media screen and (max-width: 800px) {
     .eligibility-top{
         flex-direction: column-reverse;
+    }
+    .eligibility-top > * + *{
+        margin-left: 0;
+        margin-bottom: 100px;
     }
     .eligibility-top .header-container {
         width: 100%;
